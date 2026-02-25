@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>Register</h2>
+
+  <form id="form">
+    <input type="text" id="email" placeholder="Email" />
+    <small class="error" id="emailError"></small>
+
+    <input type="text" id="phone" placeholder="Phone (Egypt)" />
+    <small class="error" id="phoneError"></small>
+
+    <input type="password" id="password" placeholder="Password" />
+    
+    <!-- Password Strength -->
+    <div class="strength">
+      <div id="bar"></div>
+    </div>
+    <small id="strengthText"></small>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
